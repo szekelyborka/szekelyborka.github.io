@@ -1,0 +1,99 @@
+ *	{ 
+	box-sizing: border-box
+ }
+html{
+	font-size: 16px
+}
+body {
+	background: #f9ebea;
+	font-family: "Times New Roman", Times, serif;
+	margin: 0
+}
+nav {
+	background: #b30059;
+	position: sticky;
+	top: 0;
+}
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none
+}
+nav ul li:not(:last-child) {
+		float: left
+}
+nav ul li:last-child {
+	float: right;
+	font-family: 'Syncopate', sans-serif;
+	color: white;
+	padding: 0.8rem 2rem;
+	font-size: 1.5rem
+}
+nav::after {
+	content:'';
+	clear: both;
+	display: table
+}
+nav a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 1.2rem 1.5rem;
+	font-size: 1.2rem;
+	border-size: 0.1rem;
+	border-color: white
+}
+nav a:hover {
+	background: rgba(0,0,0,.1)
+}
+	
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 95%
+}
+
+.wrapper img {
+	float: right;
+	margin: 0 0 2rem 2rem;
+	border-radius: 50%
+}
+.wrapper h1 {
+	font-weigth: 100;
+	color:  #99004d;
+	font-style: italic;
+	font-size: 4rem;
+	margin: 2rem 0 3rem 0  
+}
+.box {
+	max-width: 750px
+}
+.box p {
+	margin: 2rem 0;
+	line-height: 1.7rem;
+	font-size: 1.2rem
+}
+@media (max-width: 800px) {
+	.wrapper img {
+		max-width: 280px;
+	}
+	.wrapper h1 {
+		font-size: 4rem
+	}
+}
+@media (max-width: 480px) {
+	.wrapper img {
+		max-width: 200px;
+		float: none;
+		margin: 1rem auto;
+		display: block
+	}
+	.wrapper h1 {
+		font-size: 3rem
+	}
+	.box p {
+		font-size: 1rem;
+		line-height: 1.2rem
+	}
+}
+

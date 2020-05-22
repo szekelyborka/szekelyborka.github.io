@@ -1,0 +1,122 @@
+*	{ 
+	box-sizing: border-box
+ }
+html{
+	font-size: 16px
+}
+body {
+	background: #f9ebea;
+	font-family: "Times New Roman", Times, serif;
+	margin: 0
+}
+img {
+	max-width: 100%
+}
+nav {
+	background: #b30059;
+	position: sticky;
+	top:0
+}
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none
+}
+
+nav ul li:not(:last-child) {
+		float: left
+}
+nav ul li:last-child {
+	float: right;
+	font-family: 'Syncopate', sans-serif;
+	color: white;
+	padding: 0.8rem 2rem;
+	font-size: 1.5rem
+}
+nav::after {
+	content:'';
+	clear: both;
+	display: table
+}
+nav a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 1.2rem 1.5rem;
+	font-size: 1.2rem
+}
+nav a:hover {
+	background: rgba(0,0,0,.1)
+}
+	
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 95%
+}
+
+.wrapper img {
+	float: center;
+	margin: 0 0 0.5rem 0
+	
+}
+.box-wrapper {
+	display: flex;
+	flex-flow: column wrap;
+	margin:0 -10px;
+	
+}
+.box {
+	flex: 1;
+	margin: 10px;
+	background: white;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.1)
+}
+.box img {
+	float: left;
+	margin: 1rem 2rem 1rem 1rem;
+}
+.box-content {
+	padding: 1rem 1.5rem
+	
+}
+.box h2 {
+	padding: 0 0 1rem 0;
+	font-size: 3rem;
+	margin:0
+	
+}
+.btn {
+	display: inline-block;
+	padding: 0.8rem 1rem;
+	background: #e60000;
+	color: white;
+	font-weight: strong;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 1.5rem;
+	margin: 1rem 0	
+}
+span.imdb {
+	background: yellow;
+	border: 3px outset rgba(0,0,0,.9);
+	display: inline-block;
+	padding: 0.1rem 0.1rem
+	
+}
+.ertekeles {
+	font-weight: bold;
+	font-size:1.2rem
+}	
+
+@media (max-width: 720px) {
+	
+	.box img {
+		float: none;
+		margin: 0 auto;
+		padding: 1rem 1.5rem;
+		display: block
+	}
+
+}
+

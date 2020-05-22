@@ -1,0 +1,91 @@
+*	{ 
+	box-sizing: border-box
+ }
+html{
+	font-size: 16px
+}
+body {
+	background: #f9ebea;
+	font-family: "Times New Roman", Times, serif;
+	margin: 0
+}
+
+nav {
+	background: #b30059;
+	position: sticky;
+	top:0
+}
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none
+}
+
+nav ul li:not(:last-child) {
+		float: left
+}
+nav ul li:last-child {
+	float: right;
+	font-family: 'Syncopate', sans-serif;
+	color: white;
+	padding: 0.8rem 2rem;
+	font-size: 1.5rem
+}
+nav::after {
+	content:'';
+	clear: both;
+	display: table
+}
+nav a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 1.2rem 1.5rem;
+	font-size: 1.2rem
+}
+nav a:hover {
+	background: rgba(0,0,0,.1)
+}
+	
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 95%;
+}
+h1 {
+	font-size: 4rem;
+	font-style: italic;
+	text-decoration: underline;
+	color: #99004d;
+	
+}
+.box-wrapper {
+	display: flex;
+	flex-flow: column wrap;
+	margin:0 -10px;
+
+	
+}
+.box {
+	flex: 1;
+	margin: 10px;
+	background: rgb(179, 0, 89,.5);
+	box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+	max-width: 600px
+}
+.box img {
+	float: right;
+	padding: 0.5rem 1.5rem
+}
+.box a {
+	font-size: 1.5rem;
+	margin: 3rem 1.5rem 0 1.5rem;
+	color: black
+}	
+@media (max-width: 480px) {
+	h1 {
+		font-size: 3rem
+	}
+	
+	
+}
